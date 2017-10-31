@@ -23,5 +23,6 @@ fi
 
 if [ -f "Podfile" ]; then
   echo "==> Installing pod dependencies…"
+  bundle exec pod repo update
   bundle exec pod install
 fi
