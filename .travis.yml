@@ -1,0 +1,9 @@
+os:
+- osx
+language: generic
+osx_image: xcode9
+install:
+  - script/bootstrap
+script:
+  - bundle exec rake build
+  - bundle exec rake test

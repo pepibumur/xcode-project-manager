@@ -6,4 +6,8 @@ target 'XcodePM' do
 
   pod "xcproj", "~> 1.2"
 
+  target "XcodePMTests" do
+    inherit! :search_paths
+  end
+
 end
