@@ -1,11 +1,3 @@
-//
-//  XcodePMTests.swift
-//  XcodePMTests
-//
-//  Created by Pedro Piñera Buendía on 31.10.17.
-//  Copyright © 2017 microfeatures. All rights reserved.
-//
-
 import XCTest
 
 class XcodePMTests: XCTestCase {
