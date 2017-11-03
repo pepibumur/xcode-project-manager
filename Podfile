@@ -11,6 +11,7 @@ target 'XcodePM' do
 
   target "XcodePMTests" do
     inherit! :search_paths
+    pod 'Sparkle'
   end
 
 end
