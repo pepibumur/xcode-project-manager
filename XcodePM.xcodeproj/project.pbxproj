@@ -33,8 +33,10 @@
 		0428ADBA1FACA34200FC4136 /* XcodePM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodePM.entitlements; sourceTree = "<group>"; };
 		0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodePMTests.swift; sourceTree = "<group>"; };
 		0428ADBE1FACA37B00FC4136 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
-		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
+		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		0480F6E61FA87F8200DE023B /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0480F6FB1FA882CD00DE023B /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,12 +115,22 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		0428ADC21FACB4EC00FC4136 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0428ADC31FACB4EC00FC4136 /* App.xcconfig */,
+				0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		0480F6DD1FA87F8200DE023B = {
 			isa = PBXGroup;
 			children = (
 				0428ADBA1FACA34200FC4136 /* XcodePM.entitlements */,
 				0428ADB91FACA33C00FC4136 /* Info.plist */,
 				0428ADBE1FACA37B00FC4136 /* Tests.plist */,
+				0428ADC21FACB4EC00FC4136 /* Config */,
 				0428ADAD1FACA33600FC4136 /* Sources */,
 				0428ADBB1FACA36E00FC4136 /* Tests */,
 				0480F6E71FA87F8200DE023B /* Products */,
@@ -130,8 +142,8 @@
 		0480F6E71FA87F8200DE023B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0480F6E61FA87F8200DE023B /* XcodePM.app */,
-				0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */,
+				0480F6E61FA87F8200DE023B /* .app */,
+				0480F6FB1FA882CD00DE023B /* .xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +188,7 @@
 			);
 			name = XcodePM;
 			productName = XcodePM;
-			productReference = 0480F6E61FA87F8200DE023B /* XcodePM.app */;
+			productReference = 0480F6E61FA87F8200DE023B /* .app */;
 			productType = "com.apple.product-type.application";
 		};
 		0480F6FA1FA882CD00DE023B /* XcodePMTests */ = {
@@ -197,7 +209,7 @@
 			);
 			name = XcodePMTests;
 			productName = XcodePMTests;
-			productReference = 0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */;
+			productReference = 0480F6FB1FA882CD00DE023B /* .xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -414,6 +426,7 @@
 /* Begin XCBuildConfiguration section */
 		0480F6F21FA87F8200DE023B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0428ADC31FACB4EC00FC4136 /* App.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -471,6 +484,7 @@
 		};
 		0480F6F31FA87F8200DE023B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -522,14 +536,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodePM.entitlements;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.microfeatures.XcodePM;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -537,14 +543,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C66D6630071A0DFBC85B0A36 /* Pods-XcodePM.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = XcodePM.entitlements;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.microfeatures.XcodePM;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -552,15 +550,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B34451255B61E89321B118DD /* Pods-XcodePMTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.microfeatures.XcodePMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodePM.app/Contents/MacOS/XcodePM";
 			};
 			name = Debug;
 		};
@@ -568,15 +557,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B9D1D1EBB0374B6A3EFCA00C /* Pods-XcodePMTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Tests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.microfeatures.XcodePMTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XcodePM.app/Contents/MacOS/XcodePM";
 			};
 			name = Release;
 		};
@@ -590,7 +570,7 @@
 				0480F6F31FA87F8200DE023B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0480F6F41FA87F8200DE023B /* Build configuration list for PBXNativeTarget "XcodePM" */ = {
 			isa = XCConfigurationList;
@@ -599,7 +579,7 @@
 				0480F6F61FA87F8200DE023B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0480F7041FA882CD00DE023B /* Build configuration list for PBXNativeTarget "XcodePMTests" */ = {
 			isa = XCConfigurationList;
@@ -608,7 +588,7 @@
 				0480F7031FA882CD00DE023B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
