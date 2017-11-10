@@ -8,6 +8,7 @@ target 'XcodePM' do
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
   pod 'Sparkle'
+  pod 'macOSThemeKit', '~> 1.1.0'
 
   target "XcodePMTests" do
     inherit! :search_paths

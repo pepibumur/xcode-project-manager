@@ -11,6 +11,12 @@
 		0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB21FACA33600FC4136 /* Assets.xcassets */; };
 		0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB41FACA33600FC4136 /* MainMenu.xib */; };
 		0428ADBD1FACA36E00FC4136 /* XcodePMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */; };
+		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
+		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
+		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
+		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
+		04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CB1FB5E4710067B570 /* IntroWindowController.swift */; };
+		04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */; };
 		34817516AD0E52080D4CCD47 /* Pods_XcodePMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */; };
 		C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */; };
 /* End PBXBuildFile section */
@@ -36,8 +42,14 @@
 		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		0428ADC51FACB6A300FC4136 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroWindowController.xib; sourceTree = "<group>"; };
 		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		04D638C61FB5E1EF0067B570 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		04D638CB1FB5E4710067B570 /* IntroWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowController.swift; sourceTree = "<group>"; };
+		04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +81,9 @@
 		0428ADAD1FACA33600FC4136 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				04D638C81FB5E3C40067B570 /* Coordinator */,
+				04B1FB0F1FB5DE4C0094CF45 /* Menu */,
+				046BC0CB1FB5DD6F00BE59F6 /* Intro */,
 				0428ADAE1FACA33600FC4136 /* App */,
 				0428ADB01FACA33600FC4136 /* Resources */,
 			);
@@ -79,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				0428ADAF1FACA33600FC4136 /* AppDelegate.swift */,
+				04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */,
+				04D638C61FB5E1EF0067B570 /* main.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -87,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				0428ADB11FACA33600FC4136 /* Images */,
-				0428ADB31FACA33600FC4136 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -98,14 +114,6 @@
 				0428ADB21FACA33600FC4136 /* Assets.xcassets */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		0428ADB31FACA33600FC4136 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				0428ADB41FACA33600FC4136 /* MainMenu.xib */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		0428ADBB1FACA36E00FC4136 /* Tests */ = {
@@ -124,6 +132,16 @@
 				0428ADC51FACB6A300FC4136 /* Base.xcconfig */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		046BC0CB1FB5DD6F00BE59F6 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */,
+				04D638CB1FB5E4710067B570 /* IntroWindowController.swift */,
+				04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		0480F6DD1FA87F8200DE023B = {
@@ -148,6 +166,22 @@
 				0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		04B1FB0F1FB5DE4C0094CF45 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0428ADB41FACA33600FC4136 /* MainMenu.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		04D638C81FB5E3C40067B570 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		0AF8695EF706FFA2FDD67AD6 /* Frameworks */ = {
@@ -261,6 +295,7 @@
 			files = (
 				0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */,
 				0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */,
+				046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +373,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework",
 				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/macOSThemeKit/macOSThemeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/xcproj/xcproj.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -348,6 +384,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/macOSThemeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xcproj.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,7 +434,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */,
+				04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */,
 				0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */,
+				04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */,
+				04D638C71FB5E1EF0067B570 /* main.swift in Sources */,
+				04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 			};
 			name = Debug;
 		};
@@ -460,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C66D6630071A0DFBC85B0A36 /* Pods-XcodePM.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 			};
 			name = Release;
 		};
