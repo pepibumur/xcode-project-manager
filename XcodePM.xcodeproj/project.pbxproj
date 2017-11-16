@@ -11,12 +11,15 @@
 		0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB21FACA33600FC4136 /* Assets.xcassets */; };
 		0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB41FACA33600FC4136 /* MainMenu.xib */; };
 		0428ADBD1FACA36E00FC4136 /* XcodePMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */; };
+		0449C0E81FBE024500F78874 /* IntroStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroStorage.swift */; };
+		0449C0EB1FBE059B00F78874 /* xxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EA1FBE059B00F78874 /* xxx.swift */; };
 		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
 		04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CB1FB5E4710067B570 /* IntroWindowController.swift */; };
 		04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */; };
+		04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */; };
 		34817516AD0E52080D4CCD47 /* Pods_XcodePMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */; };
 		C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,8 @@
 		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		0428ADC51FACB6A300FC4136 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		0449C0E71FBE024500F78874 /* IntroStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroStorage.swift; sourceTree = "<group>"; };
+		0449C0EA1FBE059B00F78874 /* xxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xxx.swift; sourceTree = "<group>"; };
 		046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroWindowController.xib; sourceTree = "<group>"; };
 		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +55,7 @@
 		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		04D638CB1FB5E4710067B570 /* IntroWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowController.swift; sourceTree = "<group>"; };
 		04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,7 @@
 		0428ADAD1FACA33600FC4136 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				0449C0E91FBE058E00F78874 /* Utils */,
 				04D638C81FB5E3C40067B570 /* Coordinator */,
 				04B1FB0F1FB5DE4C0094CF45 /* Menu */,
 				046BC0CB1FB5DD6F00BE59F6 /* Intro */,
@@ -119,6 +126,7 @@
 		0428ADBB1FACA36E00FC4136 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0449C0ED1FBE078200F78874 /* Intro */,
 				0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */,
 			);
 			path = Tests;
@@ -134,12 +142,29 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		0449C0E91FBE058E00F78874 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0449C0EA1FBE059B00F78874 /* xxx.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0449C0ED1FBE078200F78874 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		046BC0CB1FB5DD6F00BE59F6 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
 				046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */,
 				04D638CB1FB5E4710067B570 /* IntroWindowController.swift */,
 				04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */,
+				04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */,
+				0449C0E71FBE024500F78874 /* IntroStorage.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -436,10 +461,13 @@
 			files = (
 				04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */,
 				04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */,
+				0449C0EB1FBE059B00F78874 /* xxx.swift in Sources */,
 				0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */,
 				04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */,
 				04D638C71FB5E1EF0067B570 /* main.swift in Sources */,
 				04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */,
+				0449C0E81FBE024500F78874 /* IntroStorage.swift in Sources */,
+				04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

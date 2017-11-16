@@ -14,9 +14,8 @@ class IntroWindowController: NSWindowController, NSWindowDelegate {
     }
 
     override func showWindow(_ sender: Any?) {
-        window?.center()
-        window?.alphaValue = 0.0
         super.showWindow(sender)
+        window?.center()
         window?.animator().alphaValue = 1.0
         var frame = self.window?.frame ?? CGRect.zero
         frame.size = IntroWindowController.defaultSize
@@ -30,6 +29,9 @@ class IntroWindowController: NSWindowController, NSWindowDelegate {
         window?.titlebarAppearsTransparent = true
         window?.titleVisibility = .hidden
     }
+    
+    // MARK: - Private
+    
     
     // MARK: - NSWindowDelegate
     
