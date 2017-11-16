@@ -1,7 +1,5 @@
 # Xcode Project Manager
 
-![](Assets/Logo.png)
-
 [![Build Status](https://travis-ci.org/xcode-project-manager/app.svg?branch=master)](https://travis-ci.org/microfeatures/xcode-project-manager)
 
 A macOS app to manage your modular Xcode projects.
