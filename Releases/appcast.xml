@@ -3,7 +3,7 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <title>XcodePM Changelog</title>
-        <link>https://github.com/microfeatures/xcode-project-manager/raw/master/Releases/appcast.xml</link>
+        <link>https://github.com/xcode-project-manager/app/raw/master/Releases/appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
 		    <item>
@@ -11,7 +11,7 @@
 			      <description><![CDATA[
 						]]></description>
             <pubDate>Sun, 24 Sep 2017 15:00:00 -0300</pubDate>
-            <enclosure url="https://github.com/microfeatures/xcode-project-manager/releases/download/0.1.0/XcodePM_v0.1.0.zip" sparkle:version="720" sparkle:shortVersionString="5.3" length="17551444" type="application/octet-stream" />
+            <enclosure url="https://github.com/xcode-project-manager/app/releases/download/0.1.0/XcodePM_v0.1.0.zip" sparkle:version="720" sparkle:shortVersionString="5.3" length="17551444" type="application/octet-stream" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
 	</channel>

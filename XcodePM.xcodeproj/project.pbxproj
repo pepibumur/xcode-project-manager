@@ -281,7 +281,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = microfeatures;
+				ORGANIZATIONNAME = ppinera;
 				TargetAttributes = {
 					0480F6E51FA87F8200DE023B = {
 						CreatedOnToolsVersion = 9.0.1;

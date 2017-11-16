@@ -27,7 +27,7 @@
 	<key>SUEnableAutomaticChecks</key>
 	<false/>
 	<key>SUFeedURL</key>
-	<string>https://github.com/microfeatures/xcode-project-manager/master/Releases/appcast.xml</string>
+	<string>https://github.com/xcode-project-manager/app/master/Releases/appcast.xml</string>
 	<key>SUScheduledCheckInterval</key>
 	<string>86400</string>
 </dict>
