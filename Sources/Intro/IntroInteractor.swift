@@ -1,20 +1,29 @@
 import Foundation
 import RxSwift
 
-class IntroStorage {
+// MARK: - RecentProject
 
-    // MARK: - RecentProject
+struct RecentProject: Equatable, Codable {
     
-    struct RecentProject: Equatable, Codable {
-        let name: String
-        let path: String
-        let date: Date
-        
-        static func ==(lhs: RecentProject, rhs: RecentProject) -> Bool {
-            return lhs.name == rhs.name && lhs.path == rhs.path
-        }
+    let name: String
+    let path: String
+    let date: Date
     
+    static func ==(lhs: RecentProject, rhs: RecentProject) -> Bool {
+        return lhs.name == rhs.name && lhs.path == rhs.path
     }
+    
+}
+
+// MARK: - IntroInteracting
+
+protocol IntroInteracting: AnyObject {
+    var recentProjects: Variable<[RecentProject]> { get }
+}
+
+// MARK: - IntroInteractor
+
+class IntroInteractor: IntroInteracting {
     
     // MARK: - Attributes
     
@@ -58,7 +67,7 @@ class IntroStorage {
     static let userDefaultsKey: String = "recent_projects"
     
     fileprivate func synchronizeFromUserDefaults() {
-        guard let data = self.userDefaults.object(forKey: IntroStorage.userDefaultsKey) as? Data else { return }
+        guard let data = self.userDefaults.object(forKey: IntroInteractor.userDefaultsKey) as? Data else { return }
         let decoder = JSONDecoder()
         guard let recentProjects = try? decoder.decode([RecentProject].self, from: data) else { return }
         self.recentProjects.value = recentProjects
@@ -67,7 +76,7 @@ class IntroStorage {
     fileprivate func synchronizeToUserDefaults(projects: [RecentProject]) {
         let encoder = JSONEncoder()
         guard let data = try? encoder.encode(projects) else { return }
-        self.userDefaults.set(data, forKey: IntroStorage.userDefaultsKey)
+        self.userDefaults.set(data, forKey: IntroInteractor.userDefaultsKey)
         self.userDefaults.synchronize()
     }
     

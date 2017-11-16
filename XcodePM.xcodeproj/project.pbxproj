@@ -11,8 +11,10 @@
 		0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB21FACA33600FC4136 /* Assets.xcassets */; };
 		0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB41FACA33600FC4136 /* MainMenu.xib */; };
 		0428ADBD1FACA36E00FC4136 /* XcodePMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */; };
-		0449C0E81FBE024500F78874 /* IntroStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroStorage.swift */; };
-		0449C0EB1FBE059B00F78874 /* xxx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EA1FBE059B00F78874 /* xxx.swift */; };
+		0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroInteractor.swift */; };
+		0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */; };
+		0449C0F11FBE0DDE00F78874 /* IntroInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */; };
+		0449C0F31FBE0E1500F78874 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F21FBE0E1500F78874 /* Repository.swift */; };
 		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
@@ -45,8 +47,10 @@
 		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		0428ADC51FACB6A300FC4136 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
-		0449C0E71FBE024500F78874 /* IntroStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroStorage.swift; sourceTree = "<group>"; };
-		0449C0EA1FBE059B00F78874 /* xxx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xxx.swift; sourceTree = "<group>"; };
+		0449C0E71FBE024500F78874 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
+		0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractorTests.swift; sourceTree = "<group>"; };
+		0449C0F21FBE0E1500F78874 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroWindowController.xib; sourceTree = "<group>"; };
 		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0480F6FB1FA882CD00DE023B /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +149,7 @@
 		0449C0E91FBE058E00F78874 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0449C0EA1FBE059B00F78874 /* xxx.swift */,
+				0449C0F21FBE0E1500F78874 /* Repository.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -153,6 +157,7 @@
 		0449C0ED1FBE078200F78874 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -164,7 +169,8 @@
 				04D638CB1FB5E4710067B570 /* IntroWindowController.swift */,
 				04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */,
 				04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */,
-				0449C0E71FBE024500F78874 /* IntroStorage.swift */,
+				0449C0E71FBE024500F78874 /* IntroInteractor.swift */,
+				0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -459,15 +465,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */,
 				04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */,
 				04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */,
-				0449C0EB1FBE059B00F78874 /* xxx.swift in Sources */,
 				0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */,
 				04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */,
 				04D638C71FB5E1EF0067B570 /* main.swift in Sources */,
 				04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */,
-				0449C0E81FBE024500F78874 /* IntroStorage.swift in Sources */,
+				0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */,
 				04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */,
+				0449C0F31FBE0E1500F78874 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0428ADBD1FACA36E00FC4136 /* XcodePMTests.swift in Sources */,
+				0449C0F11FBE0DDE00F78874 /* IntroInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
