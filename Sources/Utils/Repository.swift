@@ -1,4 +1,10 @@
 import Foundation
+import RxSwift
+
+enum RepositoryChange<T> {
+    case upate(T)
+    case remove
+}
 
 protocol ReadRepository {
     func read<T: Codable>(key: String) -> T?
@@ -7,25 +13,11 @@ protocol ReadRepository {
 protocol WriteRepository {
     func write<T: Codable>(_ value: T, key: String) throws
     func remove(key: String)
+    func removeAll()
+}
+
+protocol ObservableRepository {
+    func observe<T>(key: String) -> Observable<RepositoryChange<T>>
 }
 
 protocol ReadWriteRepository: WriteRepository, ReadRepository {}
-
-// MARK: - UserDefaults Extension (ReadWriteRepository)
-
-extension UserDefaults: ReadWriteRepository {
-    
-    func read<T>(key: String) -> T? where T : Decodable, T : Encodable {
-        
-    }
-    
-    func write<T>(_ value: T, key: String) throws where T : Decodable, T : Encodable {
-        
-    }
-    
-    func remove(key: String) {
-        self.removeObject(forKey: key)
-        self.synchronize()
-    }
-    
-}
