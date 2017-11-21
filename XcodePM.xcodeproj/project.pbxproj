@@ -12,10 +12,10 @@
 		0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB41FACA33600FC4136 /* MainMenu.xib */; };
 		0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroInteractor.swift */; };
 		0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */; };
-		0449C0F31FBE0E1500F78874 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F21FBE0E1500F78874 /* Repository.swift */; };
 		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
 		047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */; };
 		048949F91FC425E60001714F /* KeyValueStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */; };
+		048949FA1FC426620001714F /* IntroInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */; };
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
@@ -42,7 +42,6 @@
 		0428ADB51FACA33600FC4136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0428ADB91FACA33C00FC4136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0428ADBA1FACA34200FC4136 /* XcodePM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodePM.entitlements; sourceTree = "<group>"; };
-		0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodePMTests.swift; sourceTree = "<group>"; };
 		0428ADBE1FACA37B00FC4136 /* Tests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tests.plist; sourceTree = "<group>"; };
 		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
@@ -50,7 +49,6 @@
 		0449C0E71FBE024500F78874 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
 		0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractorTests.swift; sourceTree = "<group>"; };
-		0449C0F21FBE0E1500F78874 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroWindowController.xib; sourceTree = "<group>"; };
 		047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageTests.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 			children = (
 				047BE53F1FC34F9600C32CB6 /* Utils */,
 				0449C0ED1FBE078200F78874 /* Intro */,
-				0428ADBC1FACA36E00FC4136 /* XcodePMTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -152,7 +149,6 @@
 		0449C0E91FBE058E00F78874 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0449C0F21FBE0E1500F78874 /* Repository.swift */,
 				047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */,
 			);
 			path = Utils;
@@ -487,7 +483,6 @@
 				047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */,
 				0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */,
 				04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */,
-				0449C0F31FBE0E1500F78874 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048949F91FC425E60001714F /* KeyValueStorageTests.swift in Sources */,
+				048949FA1FC426620001714F /* IntroInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
