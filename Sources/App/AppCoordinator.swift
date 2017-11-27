@@ -8,7 +8,7 @@ class AppCoordinator: Coordinator {
     // MARK: - Attributes
     
     let updater: SUUpdater
-    var introWindowController: IntroWindowController?
+    var introCoordinator: IntroCoordinator?
     
     // MARK: - Init
     
@@ -18,11 +18,10 @@ class AppCoordinator: Coordinator {
     
     func start(element: Notification?, completion: (() -> ())? = nil) {
         ThemeManager.lightTheme.apply()
-        if introWindowController == nil {
-            introWindowController = IntroWindowController()
+        if introCoordinator == nil {
+            introCoordinator = IntroCoordinator()
         }
-        introWindowController?.showWindow(self)
-        completion?()
+        introCoordinator?.start(element: nil, completion: completion)
     }
     
 }

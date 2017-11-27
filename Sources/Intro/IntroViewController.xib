@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="IntroViewController" customModule="XcodePM" customModuleProvider="target">
+            <connections>
+                <outlet property="leftPanelView" destination="Zco-Zk-dXB" id="FjL-bP-Z0v"/>
+                <outlet property="versionTextField" destination="mgI-8o-QUg" id="rRX-5P-shW"/>
+                <outlet property="view" destination="ELq-WV-6T2" id="Xrh-hc-Mrw"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view wantsLayer="YES" id="ELq-WV-6T2">
+            <rect key="frame" x="0.0" y="0.0" width="658" height="406"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Zco-Zk-dXB" userLabel="Left Panel">
+                    <rect key="frame" x="0.0" y="0.0" width="329" height="406"/>
+                    <subviews>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOA-gY-a8Z">
+                            <rect key="frame" x="90" y="206" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="3ra-0r-jW2"/>
+                                <constraint firstAttribute="width" constant="150" id="3w2-Zv-ck6"/>
+                            </constraints>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="1ZG-kx-BIw"/>
+                        </imageView>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NsU-2b-dSh">
+                            <rect key="frame" x="117" y="170" width="95" height="21"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome to" id="vVR-PY-xqo">
+                                <font key="font" metaFont="system" size="17"/>
+                                <color key="textColor" red="0.585492228" green="0.585492228" blue="0.585492228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AOl-5z-Tq9">
+                            <rect key="frame" x="28" y="129" width="274" height="31"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Xcode Project Manager" id="1in-7P-Eha">
+                                <font key="font" metaFont="system" size="26"/>
+                                <color key="textColor" white="0.27251674110000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mgI-8o-QUg">
+                            <rect key="frame" x="120" y="101" width="89" height="18"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version: xxxx" id="L3b-SS-R7l">
+                                <font key="font" metaFont="system" size="14"/>
+                                <color key="textColor" red="0.585492228" green="0.585492228" blue="0.585492228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mgI-8o-QUg" firstAttribute="top" secondItem="AOl-5z-Tq9" secondAttribute="bottom" constant="10" id="67a-8H-rjM"/>
+                        <constraint firstItem="NsU-2b-dSh" firstAttribute="centerX" secondItem="Zco-Zk-dXB" secondAttribute="centerX" id="DZy-A3-RP9"/>
+                        <constraint firstItem="QOA-gY-a8Z" firstAttribute="centerX" secondItem="Zco-Zk-dXB" secondAttribute="centerX" id="PYT-0S-gkB"/>
+                        <constraint firstItem="AOl-5z-Tq9" firstAttribute="top" secondItem="NsU-2b-dSh" secondAttribute="bottom" constant="10" id="RCf-S1-H3t"/>
+                        <constraint firstItem="AOl-5z-Tq9" firstAttribute="centerX" secondItem="Zco-Zk-dXB" secondAttribute="centerX" id="caM-T1-aXH"/>
+                        <constraint firstItem="mgI-8o-QUg" firstAttribute="centerX" secondItem="Zco-Zk-dXB" secondAttribute="centerX" id="tGa-tE-JO7"/>
+                        <constraint firstItem="NsU-2b-dSh" firstAttribute="top" secondItem="QOA-gY-a8Z" secondAttribute="bottom" constant="15" id="ucc-dN-Ddf"/>
+                        <constraint firstItem="QOA-gY-a8Z" firstAttribute="top" secondItem="Zco-Zk-dXB" secondAttribute="top" constant="50" id="wEL-xE-zZ4"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Zco-Zk-dXB" firstAttribute="leading" secondItem="ELq-WV-6T2" secondAttribute="leading" id="Apx-tN-1l1"/>
+                <constraint firstItem="Zco-Zk-dXB" firstAttribute="top" secondItem="ELq-WV-6T2" secondAttribute="top" id="DjE-Aw-cJ1"/>
+                <constraint firstAttribute="bottom" secondItem="Zco-Zk-dXB" secondAttribute="bottom" id="YCC-fL-aqo"/>
+                <constraint firstItem="Zco-Zk-dXB" firstAttribute="width" secondItem="ELq-WV-6T2" secondAttribute="width" multiplier="0.5" id="dWh-gq-tGy"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
+</document>

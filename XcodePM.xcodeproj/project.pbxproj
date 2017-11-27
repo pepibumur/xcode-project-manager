@@ -15,18 +15,19 @@
 		042C374F1FCC839A008F393E /* Environment-Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042C374E1FCC839A008F393E /* Environment-Debug.plist */; };
 		042C37511FCC83C6008F393E /* Environment-Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = 042C37501FCC83C6008F393E /* Environment-Release.plist */; };
 		042C37531FCC83D1008F393E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C37521FCC83D1008F393E /* Environment.swift */; };
-		0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroInteractor.swift */; };
-		0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */; };
-		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
 		047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */; };
+		047EB75A1FCC95F800909F4B /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EB7531FCC95F800909F4B /* IntroCoordinator.swift */; };
+		047EB75B1FCC95F800909F4B /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EB7541FCC95F800909F4B /* IntroInteractor.swift */; };
+		047EB75C1FCC95F800909F4B /* IntroViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EB7551FCC95F800909F4B /* IntroViewPresenter.swift */; };
+		047EB75D1FCC95F800909F4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EB7561FCC95F800909F4B /* IntroViewController.swift */; };
+		047EB75F1FCC95F800909F4B /* IntroWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047EB7581FCC95F800909F4B /* IntroWindowController.swift */; };
 		048949F91FC425E60001714F /* KeyValueStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */; };
 		048949FA1FC426620001714F /* IntroInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */; };
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
-		04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CB1FB5E4710067B570 /* IntroWindowController.swift */; };
-		04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */; };
-		04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */; };
+		04D8C2551FCC961100BE96C0 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8C2541FCC961100BE96C0 /* IntroViewController.xib */; };
+		04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */; };
 		C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */; };
 		F18128287E187B5769A4F96E /* Pods_XcodePMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,20 +57,21 @@
 		042C374E1FCC839A008F393E /* Environment-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Environment-Debug.plist"; sourceTree = "<group>"; };
 		042C37501FCC83C6008F393E /* Environment-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Environment-Release.plist"; sourceTree = "<group>"; };
 		042C37521FCC83D1008F393E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		0449C0E71FBE024500F78874 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
-		0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractorTests.swift; sourceTree = "<group>"; };
-		046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroWindowController.xib; sourceTree = "<group>"; };
 		047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorage.swift; sourceTree = "<group>"; };
 		047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueStorageTests.swift; sourceTree = "<group>"; };
+		047EB7531FCC95F800909F4B /* IntroCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
+		047EB7541FCC95F800909F4B /* IntroInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		047EB7551FCC95F800909F4B /* IntroViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewPresenter.swift; sourceTree = "<group>"; };
+		047EB7561FCC95F800909F4B /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		047EB7581FCC95F800909F4B /* IntroWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroWindowController.swift; sourceTree = "<group>"; };
 		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048949EF1FC425C70001714F /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		04D638C61FB5E1EF0067B570 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
-		04D638CB1FB5E4710067B570 /* IntroWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowController.swift; sourceTree = "<group>"; };
-		04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
+		04D8C2541FCC961100BE96C0 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowPresenter.swift; sourceTree = "<group>"; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,10 +103,10 @@
 		0428ADAD1FACA33600FC4136 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				047EB7521FCC95F800909F4B /* Intro */,
 				0449C0E91FBE058E00F78874 /* Utils */,
 				04D638C81FB5E3C40067B570 /* Coordinator */,
 				04B1FB0F1FB5DE4C0094CF45 /* Menu */,
-				046BC0CB1FB5DD6F00BE59F6 /* Intro */,
 				0428ADAE1FACA33600FC4136 /* App */,
 				0428ADB01FACA33600FC4136 /* Resources */,
 			);
@@ -177,25 +179,26 @@
 			path = Intro;
 			sourceTree = "<group>";
 		};
-		046BC0CB1FB5DD6F00BE59F6 /* Intro */ = {
-			isa = PBXGroup;
-			children = (
-				046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */,
-				04D638CB1FB5E4710067B570 /* IntroWindowController.swift */,
-				04D638CD1FB5EDDE0067B570 /* IntroViewController.swift */,
-				04D638D11FB5F09A0067B570 /* IntroCoordinator.swift */,
-				0449C0E71FBE024500F78874 /* IntroInteractor.swift */,
-				0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */,
-			);
-			path = Intro;
-			sourceTree = "<group>";
-		};
 		047BE53F1FC34F9600C32CB6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		047EB7521FCC95F800909F4B /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				047EB7531FCC95F800909F4B /* IntroCoordinator.swift */,
+				047EB7541FCC95F800909F4B /* IntroInteractor.swift */,
+				047EB7551FCC95F800909F4B /* IntroViewPresenter.swift */,
+				047EB7561FCC95F800909F4B /* IntroViewController.swift */,
+				047EB7581FCC95F800909F4B /* IntroWindowController.swift */,
+				04D8C2541FCC961100BE96C0 /* IntroViewController.xib */,
+				04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */,
+			);
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		0480F6DD1FA87F8200DE023B = {
@@ -350,8 +353,8 @@
 				0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */,
 				0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */,
 				042C374F1FCC839A008F393E /* Environment-Debug.plist in Resources */,
-				046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */,
 				042C37511FCC83C6008F393E /* Environment-Release.plist in Resources */,
+				04D8C2551FCC961100BE96C0 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,19 +497,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */,
 				04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */,
 				042C374D1FCC8289008F393E /* CrashReporting.swift in Sources */,
+				047EB75A1FCC95F800909F4B /* IntroCoordinator.swift in Sources */,
+				047EB75D1FCC95F800909F4B /* IntroViewController.swift in Sources */,
 				04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */,
 				0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */,
-				04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */,
+				047EB75F1FCC95F800909F4B /* IntroWindowController.swift in Sources */,
 				04D638C71FB5E1EF0067B570 /* main.swift in Sources */,
-				04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */,
 				042C37531FCC83D1008F393E /* Environment.swift in Sources */,
+				04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */,
 				042C374B1FCC7DF7008F393E /* Tools.swift in Sources */,
 				047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */,
-				0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */,
-				04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */,
+				047EB75B1FCC95F800909F4B /* IntroInteractor.swift in Sources */,
+				047EB75C1FCC95F800909F4B /* IntroViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

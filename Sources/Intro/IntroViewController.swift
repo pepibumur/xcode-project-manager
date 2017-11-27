@@ -1,9 +1,11 @@
 import Foundation
 import Cocoa
 
-class IntroViewController: NSViewController {
+class IntroViewController: NSViewController, IntroViewing {
     
     @IBOutlet weak var leftPanelView: NSView!
+    @IBOutlet weak var versionTextField: NSTextField!
+    var presenter: IntroViewPresenting!
     
     // MARK: - Lifeccycle
     

@@ -5,3 +5,4 @@ LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
 INFOPLIST_FILE = Info.plist
 PRODUCT_NAME = $(TARGET_NAME)
 SWIFT_VERSION = 4.0
+PRODUCT_BUNDLE_IDENTIFIER = es.ppinera.XcodePM
