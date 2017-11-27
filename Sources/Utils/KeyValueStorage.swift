@@ -3,22 +3,11 @@ import RxSwift
 
 class KeyValueStorage {
     
-    enum Change<T> {
-        case update(T)
-        case remove
-        var value: T? {
-            switch self {
-            case .update(let value): return value
-            case .remove: return nil
-            }
-        }
-    }
-    
     // MARK: - Private
     
     private let name: String
     private let userDefaults: UserDefaults
-    private var subjects: [String: Any] = [:]
+    private var subjects: [String: PublishSubject<Any?>] = [:]
     
     // MARK: - Init
     
@@ -29,16 +18,13 @@ class KeyValueStorage {
     
     // MARK : - Internal
     
-    func observe<T>(key: String) -> Observable<Change<T>> {
-        var subject: PublishSubject<Change<T>>!
-        if let _subject = subjects[key] {
-            subject = _subject as? PublishSubject<Change<T>>
-        }
+    func observe<T>(key: String) -> Observable<T?> {
+        var subject: PublishSubject<Any?>! = subjects[key]
         if subject == nil {
-            subject = PublishSubject<Change<T>>()
+            subject = PublishSubject<Any?>()
             subjects[key] = subject
         }
-        return subject.asObserver()
+        return subject.map({ $0.map({$0 as! T}) })
     }
     
     func write<T>(_ value: T, key: String) throws where T : Encodable {
@@ -49,13 +35,13 @@ class KeyValueStorage {
         } else {
             writeValue(key: key, value: value)
         }
-        (subjects[key] as? PublishSubject<Change<T>>)?.onNext(.update(value))
+        (subjects[key])?.onNext(value)
     }
     
     func remove(key: String) {
         removeData(key: key)
         let subject = subjects[key]
-        (subject as? PublishSubject<Change<Any>>)?.onNext(.remove)
+        (subject)?.onNext(nil)
     }
     
     func removeAll() {

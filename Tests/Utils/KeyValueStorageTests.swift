@@ -59,8 +59,8 @@ final class KeyValueStorageTests: XCTestCase {
     
     func test_observe_notifiesWhenAValueChanges() throws {
         var got: String?
-        _ = subject.observe(key: "shakira").subscribe(onNext: { (change: KeyValueStorage.Change<String>) in
-            got = change.value
+        _ = subject.observe(key: "shakira").subscribe(onNext: { (change: String?) in
+            got = change
         })
         try subject.write("waka", key: "shakira")
         XCTAssertEqual(got, "waka")
@@ -68,8 +68,8 @@ final class KeyValueStorageTests: XCTestCase {
     
     func test_observe_notifiesWhenAValueIsRemoved() throws {
         var got: String? = "value"
-        _ = subject.observe(key: "shakira").subscribe(onNext: { (change: KeyValueStorage.Change<String>) in
-            got = change.value
+        _ = subject.observe(key: "shakira").subscribe(onNext: { (change: String?) in
+            got = change
         })
         subject.remove(key: "shakira")
         XCTAssertNil(got)
