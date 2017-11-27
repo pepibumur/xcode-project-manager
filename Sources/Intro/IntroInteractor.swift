@@ -28,19 +28,19 @@ class IntroInteractor: IntroInteracting {
     // MARK: - Attributes
     
     var recentProjects: Variable<[RecentProject]> = Variable([])
-    fileprivate let userDefaults: UserDefaults
     fileprivate let disposeBag: DisposeBag = DisposeBag()
+    fileprivate let storage: KeyValueStoring
     
     // MARK: - Init
     
-    init(userDefaults: UserDefaults = .standard) {
-        self.userDefaults = userDefaults
+    init(storage: KeyValueStoring = Tools.settingsStorage) {
+        self.storage = storage
         recentProjects
             .asObservable()
             .subscribe(onNext: { [weak self] (projects) in
             self?.synchronizeToUserDefaults(projects: projects)
         }).disposed(by: disposeBag)
-        synchronizeFromUserDefaults()
+        synchronizeFromStorage()
     }
     
     // MARK: - Internal
@@ -66,18 +66,17 @@ class IntroInteractor: IntroInteracting {
     
     static let userDefaultsKey: String = "recent_projects"
     
-    fileprivate func synchronizeFromUserDefaults() {
-        guard let data = self.userDefaults.object(forKey: IntroInteractor.userDefaultsKey) as? Data else { return }
-        let decoder = JSONDecoder()
-        guard let recentProjects = try? decoder.decode([RecentProject].self, from: data) else { return }
+    fileprivate func synchronizeFromStorage() {
+        let recentProjects: [RecentProject] = storage.read(key: IntroInteractor.userDefaultsKey) ?? []
         self.recentProjects.value = recentProjects
     }
     
     fileprivate func synchronizeToUserDefaults(projects: [RecentProject]) {
-        let encoder = JSONEncoder()
-        guard let data = try? encoder.encode(projects) else { return }
-        self.userDefaults.set(data, forKey: IntroInteractor.userDefaultsKey)
-        self.userDefaults.synchronize()
+        do {
+            try storage.write(projects, key: IntroInteractor.userDefaultsKey)
+        } catch {
+            // TODO
+        }
     }
     
 }

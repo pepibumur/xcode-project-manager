@@ -1,7 +1,15 @@
 import Foundation
 import RxSwift
 
-class KeyValueStorage {
+protocol KeyValueStoring {
+    func observe<T>(key: String) -> Observable<T?>
+    func write<T>(_ value: T, key: String) throws where T : Encodable
+    func remove(key: String)
+    func removeAll()
+    func read<T>(key: String) -> T? where T : Decodable
+}
+
+class KeyValueStorage: KeyValueStoring {
     
     // MARK: - Private
     

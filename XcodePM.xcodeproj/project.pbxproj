@@ -10,6 +10,7 @@
 		0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428ADAF1FACA33600FC4136 /* AppDelegate.swift */; };
 		0428ADB71FACA33600FC4136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB21FACA33600FC4136 /* Assets.xcassets */; };
 		0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0428ADB41FACA33600FC4136 /* MainMenu.xib */; };
+		042C374B1FCC7DF7008F393E /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C374A1FCC7DF7008F393E /* Tools.swift */; };
 		0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0E71FBE024500F78874 /* IntroInteractor.swift */; };
 		0449C0EF1FBE0D4800F78874 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */; };
 		046BC0CD1FB5DDA700BE59F6 /* IntroWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046BC0CC1FB5DDA700BE59F6 /* IntroWindowController.xib */; };
@@ -46,6 +47,7 @@
 		0428ADC31FACB4EC00FC4136 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		0428ADC41FACB4EC00FC4136 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
 		0428ADC51FACB6A300FC4136 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		042C374A1FCC7DF7008F393E /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		0449C0E71FBE024500F78874 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
 		0449C0EE1FBE0D4800F78874 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
 		0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractorTests.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				0428ADAF1FACA33600FC4136 /* AppDelegate.swift */,
 				04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */,
 				04D638C61FB5E1EF0067B570 /* main.swift */,
+				042C374A1FCC7DF7008F393E /* Tools.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -480,6 +483,7 @@
 				04D638CE1FB5EDDE0067B570 /* IntroViewController.swift in Sources */,
 				04D638C71FB5E1EF0067B570 /* main.swift in Sources */,
 				04D638CC1FB5E4710067B570 /* IntroWindowController.swift in Sources */,
+				042C374B1FCC7DF7008F393E /* Tools.swift in Sources */,
 				047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */,
 				0449C0E81FBE024500F78874 /* IntroInteractor.swift in Sources */,
 				04D638D21FB5F09A0067B570 /* IntroCoordinator.swift in Sources */,
