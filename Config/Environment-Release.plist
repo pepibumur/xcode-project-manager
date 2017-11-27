@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>sentry_dsn</key>
+	<string>https://79567ae3268d42deafba3c30cd2bdcb1:4dc80781952246cc9e77573b95848e24@sentry.io/251058</string>
+</dict>
+</plist>

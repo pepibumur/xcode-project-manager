@@ -30,15 +30,18 @@ class IntroInteractor: IntroInteracting {
     var recentProjects: Variable<[RecentProject]> = Variable([])
     fileprivate let disposeBag: DisposeBag = DisposeBag()
     fileprivate let storage: KeyValueStoring
+    fileprivate let crashReporter: CrashReporting
     
     // MARK: - Init
     
-    init(storage: KeyValueStoring = Tools.settingsStorage) {
+    init(storage: KeyValueStoring = Tools.settingsStorage,
+         crashReporter: CrashReporting = Tools.crashReporter) {
         self.storage = storage
+        self.crashReporter = crashReporter
         recentProjects
             .asObservable()
             .subscribe(onNext: { [weak self] (projects) in
-            self?.synchronizeToUserDefaults(projects: projects)
+            self?.synchronizeToStorage(projects: projects)
         }).disposed(by: disposeBag)
         synchronizeFromStorage()
     }
@@ -71,11 +74,13 @@ class IntroInteractor: IntroInteracting {
         self.recentProjects.value = recentProjects
     }
     
-    fileprivate func synchronizeToUserDefaults(projects: [RecentProject]) {
+    fileprivate func synchronizeToStorage(projects: [RecentProject]) {
         do {
             try storage.write(projects, key: IntroInteractor.userDefaultsKey)
         } catch {
-            // TODO
+            crashReporter.send(error: error,
+                               severity: .error,
+                               message: "Error writing recent projects")
         }
     }
     
