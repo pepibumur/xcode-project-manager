@@ -26,6 +26,9 @@ class IntroWindowController: NSWindowController, NSWindowDelegate, IntroWindowin
         window?.titleVisibility = .hidden
         window?.delegate = self
     }
+    
+    // MARK: - IntroWindowing
+
 
     // MARK: - NSWindowDelegate
     

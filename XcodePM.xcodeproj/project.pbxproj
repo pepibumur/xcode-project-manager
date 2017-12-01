@@ -24,10 +24,13 @@
 		048949F91FC425E60001714F /* KeyValueStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047BE5401FC34FA400C32CB6 /* KeyValueStorageTests.swift */; };
 		048949FA1FC426620001714F /* IntroInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449C0F01FBE0DDE00F78874 /* IntroInteractorTests.swift */; };
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
+		04C0F8C91FD09FA40087B1D0 /* IntroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */; };
+		04C0F8CB1FD0A1230087B1D0 /* IntroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
 		04D8C2551FCC961100BE96C0 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8C2541FCC961100BE96C0 /* IntroViewController.xib */; };
 		04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */; };
+		04D8C2591FCD537B00BE96C0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2581FCD537B00BE96C0 /* App.swift */; };
 		C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */; };
 		F18128287E187B5769A4F96E /* Pods_XcodePMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,10 +71,13 @@
 		0480F6E61FA87F8200DE023B /* XcodePM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodePM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		048949EF1FC425C70001714F /* XcodePMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodePMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRowView.swift; sourceTree = "<group>"; };
+		04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCellView.swift; sourceTree = "<group>"; };
 		04D638C61FB5E1EF0067B570 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		04D8C2541FCC961100BE96C0 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowPresenter.swift; sourceTree = "<group>"; };
+		04D8C2581FCD537B00BE96C0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
 		4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XcodePMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +173,7 @@
 				047BE53D1FC34CF500C32CB6 /* KeyValueStorage.swift */,
 				042C374C1FCC8289008F393E /* CrashReporting.swift */,
 				042C37521FCC83D1008F393E /* Environment.swift */,
+				04D8C2581FCD537B00BE96C0 /* App.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 				047EB7581FCC95F800909F4B /* IntroWindowController.swift */,
 				04D8C2541FCC961100BE96C0 /* IntroViewController.xib */,
 				04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */,
+				04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */,
+				04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */,
 			);
 			path = Intro;
 			sourceTree = "<group>";
@@ -500,6 +509,7 @@
 				04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */,
 				042C374D1FCC8289008F393E /* CrashReporting.swift in Sources */,
 				047EB75A1FCC95F800909F4B /* IntroCoordinator.swift in Sources */,
+				04D8C2591FCD537B00BE96C0 /* App.swift in Sources */,
 				047EB75D1FCC95F800909F4B /* IntroViewController.swift in Sources */,
 				04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */,
 				0428ADB61FACA33600FC4136 /* AppDelegate.swift in Sources */,
@@ -508,6 +518,8 @@
 				042C37531FCC83D1008F393E /* Environment.swift in Sources */,
 				04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */,
 				042C374B1FCC7DF7008F393E /* Tools.swift in Sources */,
+				04C0F8CB1FD0A1230087B1D0 /* IntroCellView.swift in Sources */,
+				04C0F8C91FD09FA40087B1D0 /* IntroRowView.swift in Sources */,
 				047BE53E1FC34CF500C32CB6 /* KeyValueStorage.swift in Sources */,
 				047EB75B1FCC95F800909F4B /* IntroInteractor.swift in Sources */,
 				047EB75C1FCC95F800909F4B /* IntroViewPresenter.swift in Sources */,
