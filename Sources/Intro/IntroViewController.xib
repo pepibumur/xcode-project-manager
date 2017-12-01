@@ -10,8 +10,6 @@
         <customObject id="-2" userLabel="File's Owner" customClass="IntroViewController" customModule="XcodePM" customModuleProvider="target">
             <connections>
                 <outlet property="leftPanelView" destination="Zco-Zk-dXB" id="zlq-9x-wYL"/>
-                <outlet property="scrollView" destination="C7I-yU-eZl" id="wZ0-tt-gDu"/>
-                <outlet property="tableView" destination="U3M-OZ-hgt" id="56K-KD-kfV"/>
                 <outlet property="versionTextField" destination="mgI-8o-QUg" id="rRX-5P-shW"/>
                 <outlet property="view" destination="ELq-WV-6T2" id="Xrh-hc-Mrw"/>
             </connections>
@@ -69,59 +67,12 @@
                         <constraint firstItem="QOA-gY-a8Z" firstAttribute="top" secondItem="Zco-Zk-dXB" secondAttribute="top" constant="50" id="wEL-xE-zZ4"/>
                     </constraints>
                 </customView>
-                <scrollView borderType="none" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7I-yU-eZl">
-                    <rect key="frame" x="329" y="0.0" width="329" height="406"/>
-                    <clipView key="contentView" id="rbm-Yz-Rka">
-                        <rect key="frame" x="0.0" y="0.0" width="329" height="406"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="firstColumnOnly" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="U3M-OZ-hgt">
-                                <rect key="frame" x="0.0" y="0.0" width="329" height="406"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <size key="intercellSpacing" width="3" height="2"/>
-                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
-                                <tableColumns>
-                                    <tableColumn editable="NO" width="313" minWidth="40" maxWidth="1000" id="NWT-tp-gJi" userLabel="Projects">
-                                        <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
-                                            <font key="font" metaFont="smallSystem"/>
-                                            <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
-                                        </tableHeaderCell>
-                                        <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="DGK-zc-d7P">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                        <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                    </tableColumn>
-                                </tableColumns>
-                                <connections>
-                                    <outlet property="dataSource" destination="-2" id="oai-cr-6BC"/>
-                                    <outlet property="delegate" destination="-2" id="Nd0-Xc-sfi"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                    </clipView>
-                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="n98-Z2-d6e">
-                        <rect key="frame" x="-100" y="-100" width="327" height="16"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </scroller>
-                    <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="MJe-7u-Jc5">
-                        <rect key="frame" x="-100" y="-100" width="15" height="102"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </scroller>
-                </scrollView>
             </subviews>
             <constraints>
                 <constraint firstItem="Zco-Zk-dXB" firstAttribute="leading" secondItem="ELq-WV-6T2" secondAttribute="leading" id="Apx-tN-1l1"/>
                 <constraint firstItem="Zco-Zk-dXB" firstAttribute="top" secondItem="ELq-WV-6T2" secondAttribute="top" id="DjE-Aw-cJ1"/>
-                <constraint firstItem="C7I-yU-eZl" firstAttribute="leading" secondItem="Zco-Zk-dXB" secondAttribute="trailing" id="HEP-Kn-Tu7"/>
-                <constraint firstAttribute="bottom" secondItem="C7I-yU-eZl" secondAttribute="bottom" id="TRd-e3-OSe"/>
-                <constraint firstItem="C7I-yU-eZl" firstAttribute="top" secondItem="ELq-WV-6T2" secondAttribute="top" id="Wgl-2M-WRt"/>
                 <constraint firstAttribute="bottom" secondItem="Zco-Zk-dXB" secondAttribute="bottom" id="YCC-fL-aqo"/>
                 <constraint firstItem="Zco-Zk-dXB" firstAttribute="width" secondItem="ELq-WV-6T2" secondAttribute="width" multiplier="0.5" id="dWh-gq-tGy"/>
-                <constraint firstAttribute="trailing" secondItem="C7I-yU-eZl" secondAttribute="trailing" id="fl0-5V-U6f"/>
             </constraints>
         </view>
     </objects>

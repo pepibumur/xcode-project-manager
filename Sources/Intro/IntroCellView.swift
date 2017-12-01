@@ -30,7 +30,6 @@ class IntroCellView: NSTableCellView {
     }
 
     fileprivate func setupContent() {
-        wantsLayer = true
         titleTextView.stringValue = "Project"
         detailTextView.stringValue = "Path"
         iconImageView.wantsLayer = true
