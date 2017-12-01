@@ -21,7 +21,6 @@ PODS:
   - Sentry/Core (3.9.1)
   - Sentry/KSCrash (3.9.1):
     - KSCrash/Core (~> 1.15.12)
-  - Sparkle (1.18.1)
   - Toml (0.4.0)
   - xcproj (1.5.0):
     - AEXML (~> 4.1)
@@ -32,7 +31,6 @@ DEPENDENCIES:
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - Sentry (from `https://github.com/getsentry/sentry-cocoa.git`, tag `3.9.1`)
-  - Sparkle
   - Toml (from `https://github.com/pepibumur/swift-toml.git`)
   - xcproj (~> 1.2)
 
@@ -48,7 +46,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/getsentry/sentry-cocoa.git
     :tag: 3.9.1
   Toml:
-    :commit: 9b6a5970467536ecc1ff8a314df79566d4088a21
+    :commit: a3c0690d700a4d84006014b52227ffe7b3c2e6fa
     :git: https://github.com/pepibumur/swift-toml.git
 
 SPEC CHECKSUMS:
@@ -59,10 +57,9 @@ SPEC CHECKSUMS:
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   Sentry: e2707f9a6b498277d9620a48fcb1bd3b655c8473
-  Sparkle: 06ea33170007c5937ee54da481b4481af98fac79
   Toml: 2763091bd571ff3ef3d98f1a0d0bd000595bfd88
   xcproj: 1da6a5b4b385e836fbdab7e888c903db62a2c13d
 
-PODFILE CHECKSUM: f961c788c7a6035d301d0222afa0cabaa78c2e19
+PODFILE CHECKSUM: 13e7442b4af234bd168d8249369d8aec372504ad
 
 COCOAPODS: 1.3.1

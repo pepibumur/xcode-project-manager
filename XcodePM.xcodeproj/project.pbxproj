@@ -26,6 +26,8 @@
 		04B1FB111FB5DEE40094CF45 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */; };
 		04C0F8C91FD09FA40087B1D0 /* IntroRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */; };
 		04C0F8CB1FD0A1230087B1D0 /* IntroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */; };
+		04C0F8D41FD1BC3B0087B1D0 /* DevMateKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C0F8D21FD1BC220087B1D0 /* DevMateKit.framework */; };
+		04C0F8D51FD1BC3B0087B1D0 /* DevMateKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04C0F8D21FD1BC220087B1D0 /* DevMateKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
 		04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */; };
@@ -43,6 +45,20 @@
 			remoteInfo = XcodePM;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04C0F8D61FD1BC3B0087B1D0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				04C0F8D51FD1BC3B0087B1D0 /* DevMateKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0428ADAF1FACA33600FC4136 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +88,9 @@
 		04B1FB101FB5DEE40094CF45 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRowView.swift; sourceTree = "<group>"; };
 		04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCellView.swift; sourceTree = "<group>"; };
+		04C0F8D21FD1BC220087B1D0 /* DevMateKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DevMateKit.framework; path = Dependencies/DevMateKit.framework; sourceTree = "<group>"; };
+		04C0F8D71FD1BD100087B1D0 /* XcodePM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodePM-Bridging-Header.h"; sourceTree = "<group>"; };
+		04C0F8D81FD1BEDE0087B1D0 /* DMKevlarApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMKevlarApplication.h; path = Dependencies/DMKevlarApplication.h; sourceTree = "<group>"; };
 		04D638C61FB5E1EF0067B570 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowPresenter.swift; sourceTree = "<group>"; };
@@ -89,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C0F8D41FD1BC3B0087B1D0 /* DevMateKit.framework in Frameworks */,
 				C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +133,7 @@
 				04B1FB0F1FB5DE4C0094CF45 /* Menu */,
 				0428ADAE1FACA33600FC4136 /* App */,
 				0428ADB01FACA33600FC4136 /* Resources */,
+				04C0F8D71FD1BD100087B1D0 /* XcodePM-Bridging-Header.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -250,6 +271,8 @@
 		0AF8695EF706FFA2FDD67AD6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04C0F8D81FD1BEDE0087B1D0 /* DMKevlarApplication.h */,
+				04C0F8D21FD1BC220087B1D0 /* DevMateKit.framework */,
 				4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */,
 				AEF20A474EE80C182D60A274 /* Pods_XcodePMTests.framework */,
 			);
@@ -280,6 +303,7 @@
 				0480F6E41FA87F8200DE023B /* Resources */,
 				9B45B25BF0D1A4FE19127504 /* [CP] Embed Pods Frameworks */,
 				FDC7A76C9BACF665568CD407 /* [CP] Copy Pods Resources */,
+				04C0F8D61FD1BC3B0087B1D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -439,8 +463,6 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Sentry/Sentry.framework",
-				"${PODS_ROOT}/Sparkle/Sparkle.framework",
-				"${PODS_ROOT}/Sparkle/Sparkle.framework.dSYM",
 				"${BUILT_PRODUCTS_DIR}/Toml/Toml.framework",
 				"${BUILT_PRODUCTS_DIR}/macOSThemeKit/macOSThemeKit.framework",
 				"${BUILT_PRODUCTS_DIR}/xcproj/xcproj.framework",
@@ -453,8 +475,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sentry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Sparkle.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Sparkle.framework.dSYM",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toml.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/macOSThemeKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xcproj.framework",
@@ -582,6 +602,40 @@
 			baseConfigurationReference = 30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AEXML\"",
+					"-framework",
+					"\"KSCrash\"",
+					"-framework",
+					"\"PathKit\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Sentry\"",
+					"-framework",
+					"\"Toml\"",
+					"-framework",
+					"\"macOSThemeKit\"",
+					"-framework",
+					"\"xcproj\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Dependencies/libkevlar.a\"",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/XcodePM-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -590,6 +644,40 @@
 			baseConfigurationReference = C66D6630071A0DFBC85B0A36 /* Pods-XcodePM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AEXML\"",
+					"-framework",
+					"\"KSCrash\"",
+					"-framework",
+					"\"PathKit\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Sentry\"",
+					"-framework",
+					"\"Toml\"",
+					"-framework",
+					"\"macOSThemeKit\"",
+					"-framework",
+					"\"xcproj\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Dependencies/libkevlar.a\"",
+					"-lc++",
+					"-framework",
+					Security,
+					"-framework",
+					IOKit,
+				);
+				SWIFT_OBJC_BRIDGING_HEADER = "Sources/XcodePM-Bridging-Header.h";
 			};
 			name = Release;
 		};
