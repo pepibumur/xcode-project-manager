@@ -28,7 +28,6 @@
 		04C0F8CB1FD0A1230087B1D0 /* IntroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */; };
 		04D638C71FB5E1EF0067B570 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C61FB5E1EF0067B570 /* main.swift */; };
 		04D638CA1FB5E3CF0067B570 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */; };
-		04D8C2551FCC961100BE96C0 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8C2541FCC961100BE96C0 /* IntroViewController.xib */; };
 		04D8C2571FCC972B00BE96C0 /* IntroWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */; };
 		04D8C2591FCD537B00BE96C0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8C2581FCD537B00BE96C0 /* App.swift */; };
 		C5A139FA211843D846073504 /* Pods_XcodePM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A95F80DCE10EADF442943B4 /* Pods_XcodePM.framework */; };
@@ -75,7 +74,6 @@
 		04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCellView.swift; sourceTree = "<group>"; };
 		04D638C61FB5E1EF0067B570 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		04D638C91FB5E3CF0067B570 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
-		04D8C2541FCC961100BE96C0 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroWindowPresenter.swift; sourceTree = "<group>"; };
 		04D8C2581FCD537B00BE96C0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		30CB5949C02603C01E61446D /* Pods-XcodePM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XcodePM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XcodePM/Pods-XcodePM.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				047EB7551FCC95F800909F4B /* IntroViewPresenter.swift */,
 				047EB7561FCC95F800909F4B /* IntroViewController.swift */,
 				047EB7581FCC95F800909F4B /* IntroWindowController.swift */,
-				04D8C2541FCC961100BE96C0 /* IntroViewController.xib */,
 				04D8C2561FCC972B00BE96C0 /* IntroWindowPresenter.swift */,
 				04C0F8C81FD09FA40087B1D0 /* IntroRowView.swift */,
 				04C0F8CA1FD0A1230087B1D0 /* IntroCellView.swift */,
@@ -363,7 +360,6 @@
 				0428ADB81FACA33600FC4136 /* MainMenu.xib in Resources */,
 				042C374F1FCC839A008F393E /* Environment-Debug.plist in Resources */,
 				042C37511FCC83C6008F393E /* Environment-Release.plist in Resources */,
-				04D8C2551FCC961100BE96C0 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

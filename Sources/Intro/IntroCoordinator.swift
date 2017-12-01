@@ -7,8 +7,7 @@ class IntroCoordinator: Coordinator {
     
     func start(element: Void?, completion: (() -> ())?) {
         if introWindowController == nil {
-            let viewController = IntroViewController(nibName: NSNib.Name.init(rawValue: "IntroViewController"),
-                                                     bundle: nil)
+            let viewController = IntroViewController()
             viewController.presenter = IntroViewPresenter(view: viewController)
             let window = NSWindow(contentViewController: viewController)
             introWindowController = IntroWindowController(window: window)
