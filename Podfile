@@ -10,6 +10,7 @@ target 'XcodePM' do
   pod 'macOSThemeKit', '~> 1.1.0'
   pod 'RxSwift',    '~> 4.0'
   pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '3.9.1'
+  pod 'Toml', :git => 'https://github.com/pepibumur/swift-toml.git'
 
   target "XcodePMTests" do
     inherit! :search_paths
